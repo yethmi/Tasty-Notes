@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/beige"
+    tools:context=".Desserts">
+
+    <include layout="@layout/top_bar" />
+
+    <include
+        android:id="@+id/include6"
+        layout="@layout/search_bar"
+        tools:layout_editor_absoluteX="93dp"
+        tools:layout_editor_absoluteY="102dp" />
+
+    <include
+        android:id="@+id/include8"
+        layout="@layout/nav_bar"
+        tools:layout_editor_absoluteY="680dp" />
+
+    <ScrollView
+        style="@style/scroll_view_style2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@+id/include8"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/include6"
+        app:layout_constraintVertical_bias="0.163">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:backgroundTint="@color/white"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/include6">
+
+
+            <TextView
+                android:id="@+id/categoryTopic"
+                style="@style/heading_style"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="0dp"
+                android:text="@string/Category2" />
+
+            <TextView
+                android:id="@+id/foodlist1"
+                style="@style/foodList"
+                android:onClick="openFood"
+                android:text="@string/sampleName" />
+
+            <TextView
+                android:id="@+id/foodlist2"
+                style="@style/foodList"
+                android:text="Lemon Meringue Pie" />
+
+            <TextView
+                android:id="@+id/foodlist3"
+                style="@style/foodList"
+                android:text="Raspberry Sorbet" />
+
+            <TextView
+                android:id="@+id/foodlist4"
+                style="@style/foodList"
+                android:text="Chocolate Lava Cake" />
+
+            <TextView
+                android:id="@+id/textView5"
+                style="@style/foodList"
+                android:text="Cheesecake" />
+        </LinearLayout>
+
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

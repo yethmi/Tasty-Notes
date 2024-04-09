@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/beige"
+      tools:context=".AddRecipe">
+
+    <include layout="@layout/top_bar" />
+
+
+    <include
+        android:id="@+id/include"
+        layout="@layout/nav_bar"/>
+
+    <TextView
+        android:id="@+id/addRecipeHeading"
+        style="@style/heading_style"
+        android:layout_marginBottom="8dp"
+        android:text="@string/addRecipeHeading"
+        app:layout_constraintBottom_toTopOf="@+id/scrollView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.063"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="match_parent"
+        android:layout_height="600dp"
+        style="@style/scroll_view_style1"
+       android:backgroundTint="@color/white"
+        android:paddingLeft="20dp"
+        android:paddingTop="20dp"
+        android:paddingRight="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/include"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.521"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <LinearLayout
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:orientation="vertical"
+            android:paddingTop="0dp"
+            android:paddingBottom="400dp"
+            android:layout_gravity="center_horizontal">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/textField1"
+                android:hint="@string/addRecipeInput1"
+                android:layout_width="360dp"
+                style="@style/from_text_style">
+                <include layout="@layout/form_field" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/textField2"
+                android:hint="@string/addRecipeInput2"
+                style="@style/from_text_style">
+                <include layout="@layout/form_field" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/textField3"
+                android:hint="@string/addRecipeInput3"
+                style="@style/from_text_style"
+                android:inputType="number">
+                <include layout="@layout/form_field" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/noteTextInputLayout1"
+                style="@style/from_text_style"
+                android:hint="@string/addRecipeInput4"
+                app:hintEnabled="true">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/noteEditTextarea1"
+                    android:minLines="4"
+                    style="@style/text_area_style">
+
+                </com.google.android.material.textfield.TextInputEditText>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/noteTextInputLayout2"
+                style="@style/from_text_style"
+                android:hint="@string/addRecipeInput5">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/noteEditTextarea2"
+                    style="@style/text_area_style"
+                    android:minLines="2">
+                </com.google.android.material.textfield.TextInputEditText>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <LinearLayout
+                android:layout_width="380dp"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/textField6"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:hint="@string/addRecipeInput6">
+
+                    <include
+                        layout="@layout/form_field"
+                        android:layout_width="180dp"
+                        android:layout_height="wrap_content" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <Button
+                    android:id="@+id/buttonSelectImage"
+                    style="@style/button_style_1"
+                    android:layout_marginTop="-10dp"
+                    android:text="Select\nImage" />
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="50dp">
+
+                <Button
+                    android:id="@+id/button2"
+                    android:layout_marginLeft="50dp"
+                    style="@style/button_style_1"
+                    android:text="Cancel" />
+
+                <Button
+                    android:id="@+id/button"
+                    android:layout_marginLeft="60dp"
+                    android:layout_marginRight="50dp"
+                    android:text="Save"
+                    style="@style/button_style_1" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

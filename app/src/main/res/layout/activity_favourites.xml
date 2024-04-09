@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/beige"
+    tools:context=".Favourites">
+
+
+    <include
+        android:id="@+id/include4"
+        layout="@layout/top_bar" />
+
+    <include
+        android:id="@+id/include2"
+        layout="@layout/nav_bar" />
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        style="@style/scroll_view_style1"
+        android:layout_height="550dp"
+        app:layout_constraintBottom_toTopOf="@+id/include2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/include4"
+        app:layout_constraintVertical_bias="1.0">
+
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="60dp">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/card1"
+                style="@style/food_card_style"
+                android:onClick="openFavouriteFood"
+                tools:ignore="DuplicateIds">
+
+                <TextView
+                    android:id="@+id/textViewCard2"
+                    style="@style/food_card_name_style"
+                    android:text="@string/sampleName"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/imageView2"
+                    app:layout_constraintHorizontal_bias="0.125"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.265"
+                    app:layout_wrapBehaviorInParent="included" />
+
+                <TextView
+                    android:id="@+id/textView"
+                    style="@style/food_card_subtext_style"
+                    android:layout_marginTop="101dp"
+                    android:layout_marginBottom="16dp"
+                    android:text="@string/foodCardSubText2"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/imageView2"
+                    app:layout_constraintHorizontal_bias="0.452"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/textViewCard2"
+                    app:layout_constraintVertical_bias="1.0"
+                    tools:ignore="NotSibling" />
+
+                <ImageView
+                    android:id="@+id/imageView2"
+                    style="@style/food_card_image_style"
+                    android:layout_width="147dp"
+                    android:layout_height="143dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.807"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.571"
+                    app:srcCompat="@drawable/sample_image" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/card1"
+                style="@style/food_card_style"
+                android:onClick="openFood"
+                tools:ignore="DuplicateIds">
+
+                <TextView
+                    android:id="@+id/textViewCard1"
+                    style="@style/food_card_name_style"
+                    android:text="@string/foodCardName1"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/imageView2"
+                    app:layout_constraintHorizontal_bias="0.125"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.265"
+                    app:layout_wrapBehaviorInParent="included" />
+
+                <TextView
+                    android:id="@+id/textView"
+                    style="@style/food_card_subtext_style"
+                    android:text="@string/foodCardSubText1"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/imageView2"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textViewCard1"
+                    app:layout_constraintVertical_bias="0.25" />
+
+                <ImageView
+                    android:id="@+id/imageView2"
+                    style="@style/food_card_image_style"
+                    android:layout_width="148dp"
+                    android:layout_height="142dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.841"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/pasta" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/card1"
+                style="@style/food_card_style"
+                android:onClick="openFood"
+                tools:ignore="DuplicateIds">
+
+                <TextView
+                    android:id="@+id/textViewCard1"
+                    style="@style/food_card_name_style"
+                    android:text="@string/foodCardName3"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/imageView2"
+                    app:layout_constraintHorizontal_bias="0.125"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.265"
+                    app:layout_wrapBehaviorInParent="included" />
+
+                <TextView
+                    android:id="@+id/textView"
+                    style="@style/food_card_subtext_style"
+                    android:text="@string/foodCardSubText3"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/imageView2"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textViewCard1"
+                    app:layout_constraintVertical_bias="0.25" />
+
+                <ImageView
+                    android:id="@+id/imageView2"
+                    style="@style/food_card_image_style"
+                    android:layout_width="162dp"
+                    android:layout_height="145dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="1.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/drink1" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </LinearLayout>
+
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/textView2"
+        style="@style/heading_style"
+        android:text="My Favourites"
+        app:layout_constraintBottom_toTopOf="@+id/scrollView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.007"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/include4"
+        app:layout_constraintVertical_bias="0.591" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

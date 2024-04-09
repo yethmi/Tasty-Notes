@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/beige"
+    tools:context=".Profile">
+
+    <include
+        android:id="@+id/include9"
+        layout="@layout/top_bar"
+        tools:layout_editor_absoluteX="2dp" />
+
+    <include
+        android:id="@+id/include7"
+        layout="@layout/nav_bar"
+        tools:layout_editor_absoluteY="680dp" />
+
+    <TextView
+        style="@style/heading_style"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Edit Profile"
+        app:layout_constraintBottom_toTopOf="@+id/frameLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.053"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/include9"
+        app:layout_constraintVertical_bias="0.686" />
+
+    <FrameLayout
+        android:id="@+id/frameLayout"
+        style="@style/scroll_view_style2"
+        android:layout_width="381dp"
+        android:layout_height="228dp"
+        android:layout_margin="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/include7"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/include9"
+        app:layout_constraintVertical_bias="0.396">
+
+        <LinearLayout
+            android:layout_width="348dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/textField1"
+                style="@style/from_text_style"
+                android:layout_width="match_parent"
+                android:hint="@string/profileInput1">
+
+                <include layout="@layout/form_field" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/textField2"
+                style="@style/from_text_style"
+                android:layout_width="match_parent"
+
+                android:hint="@string/profileInput2">
+
+                <include layout="@layout/form_field" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center_horizontal">
+
+                <Button
+                    style="@style/button_style_1"
+                    android:text="Save" />
+
+                <Button
+                    style="@style/button_style_1"
+                    android:layout_marginLeft="30dp"
+                    android:text="Cancel"
+                    android:onClick="openProfile"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </FrameLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

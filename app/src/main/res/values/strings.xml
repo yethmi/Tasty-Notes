@@ -1,0 +1,36 @@
+<resources>
+    <string name="app_name">Tasty Notes</string>
+    <string name="dashBoardScrollViewName">Categories</string>
+    <string name="addRecipeHeading">Add New Recipe </string>
+    <string name="cardName1">Main Courses</string>
+    <string name="cardName2">Dessert</string>
+    <string name="cardName3">Drinks</string>
+    <string name="addRecipeInput1">Name</string>
+    <string name="addRecipeInput2">Category</string>
+    <string name="addRecipeInput3">Servings</string>
+    <string name="addRecipeInput4">Ingredients</string>
+    <string name="addRecipeInput5">Method</string>
+    <string name="addRecipeInput6">image</string>
+    <string name="Category1">Main Course</string>
+    <string name="Category2">Desserts</string>
+    <string name="Category3">Drinks</string>
+    <string name="Category4">Meat</string>
+    <string name="foodCardSubText1">Pasta</string>
+    <string name="foodCardName1">One-Pan Tomato Spinach Chicken Pasta</string>
+    <string name="foodCardSubText2">Dessert</string>
+    <string name="foodCardName3">Blue Indigo Cocktail Shimmer</string>
+    <string name="foodCardSubText3">Drinks</string>
+    <string name="sampleName">Rose and white chocolate pudding with strawberries</string>
+    <string name="sampleMethod">Soak gelatine; heat cream, sugar, and chocolate until melted.
+        Add gelatine, stir in rosewater, and pour into moulds to chill. For decoration,
+        simmer strawberries with sugar, rosewater, and powder, then strain. Simmer juice to thicken. Unmould chilled
+        panna cottas, top with strawberry cubes, syrup, and decorate with strawberry halves and flowers.</string>
+    <string name="sample_servings">2 Servings</string>
+    <string name="sampleInIngredients">3½ sheets fine-leaf gelatine \n40g caster sugar \n
+        600ml double cream\n100g plain white chocolate chopped\n5tbsp rosewater</string>
+    <string name="profileInput1">Name</string>
+    <string name="profileInput2">Email</string>
+    <string name="onboarding_screen_1">Easy add, easy cook.</string>
+    <string name="onboarding_screen_2">Meal planning made easy, with categories.</string>
+    <string name="onboarding_screen_3">Save favorites, cook with love</string>
+</resources>
